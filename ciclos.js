@@ -17,3 +17,21 @@ for (var persona of personas)
 personas.forEach(element => {
     saludarPersonas(element);
 });
+
+var estudiantes = ["maria", "sergio", "rosa", "daniel"];
+
+function saludarEstudiantes(estudiante)
+{
+    console.log(` Hola ${estudiante} besitos`);
+}
+
+var contador = 0;
+while (contador < estudiantes.length) {
+    saludarEstudiantes(estudiantes[contador]);
+    contador++;
+}
+
+while (estudiantes.length > 0) {
+    var estudiante = estudiantes.shift();
+    saludarEstudiantes(estudiante);
+}
